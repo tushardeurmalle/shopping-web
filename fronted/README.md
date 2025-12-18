@@ -1,3 +1,40 @@
+# Frontend
+
+React frontend for the shopping web application (created with Create React App).
+
+## Requirements
+
+- Node.js 14+ (or compatible LTS)
+
+## Setup
+
+1. Install dependencies:
+
+```bash
+cd fronted
+npm install
+```
+
+2. Run development server:
+
+```bash
+npm start
+```
+
+3. Build for production:
+
+```bash
+npm run build
+```
+
+## Notes
+
+- The entry point is `src/index.js` and main component is `src/App.js`.
+- Update `src/api.js` if backend API URL changes.
+
+## License
+
+Add your license here.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
