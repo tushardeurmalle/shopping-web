@@ -1,0 +1,85 @@
+.app-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: linear-gradient(90deg, rgb(180, 200, 230), rgb(220, 230, 245));
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.app-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+#nav-link {
+  color: rgb(25, 25, 35);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+#nav-link:hover {
+  color: rgb(50, 90, 200);
+  transform: translateY(-2px) scale(1.05);
+}
+
+#link-signup {
+  background-color: black;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#link-signup:hover {
+  background-color: rgb(30, 30, 30);
+  transform: scale(1.05);
+}
+#nav-link1 {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+#nav-link1:hover {
+  color: rgb(200, 200, 255);
+}
+
+@media (max-width: 768px) {
+  .app-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  .app-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  #nav-link {
+    font-size: 18px;
+  }
+
+  #link-signup {
+    width: 100%;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,135 @@
+
+.home {
+  background: linear-gradient(135deg, rgb(110, 130, 120), rgb(140, 170, 160));
+  min-height: 100vh;
+  padding: 30px;
+}
+
+
+#pro {
+  margin-left: 20px;
+  color: white;
+  margin-top: 0;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.home-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.home-content {
+  height: 320px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.home-content:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+}
+
+.home-content img {
+  width: 100%;
+  height: 160px;        
+  object-fit: cover;    
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+  
+}
+
+.home-content img:hover {
+  transform: scale(1.05);   
+}
+.home-content h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 8px 0;
+  color: #333;
+  text-align: center;
+}
+
+.home-content p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.home-btn {
+  padding: 10px;
+  border: none;
+  background: linear-gradient(135deg, #4a69bd, #1e3799);
+  color: white;
+  border-radius: 6px;
+  width: 120px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.home-btn:hover {
+  background: linear-gradient(135deg, #6a89cc, #3c6382);
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+  .home-main {
+    gap: 15px;
+  }
+
+  .home-content {
+    width: 180px;
+    height: 280px;
+  }
+
+  .home-content img {
+    height: 130px;
+  }
+
+  .home-btn {
+    width: 100px;
+    font-size: 14px;
+  }
+
+  #pro {
+    font-size: 26px;
+  }
+}
+.img-box {
+  width: 100%;
+  height: 160px;         
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;       
+  border-radius: 8px;
+  background: #f9f9f9;    
+}
+
+.img-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;    
+  transition: transform 0.3s ease;
+}
+
+.img-box img:hover {
+  transform: scale(1.05);
+}
